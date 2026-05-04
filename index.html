@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory System</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        td { cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h2>Inventory System</h2>
+
+<input type="text" id="item" placeholder="Item"><br><br>
+<input type="number" id="quantity" placeholder="Quantity"><br><br>
+<button onclick="addItem()">Submit</button>
+
+<br><br>
+
+<label>
+    <input type="checkbox" id="toggleTable"> View table
+</label>
+
+<br><br>
+
+<table id="inventoryTable" style="display:none;">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
